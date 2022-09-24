@@ -5,7 +5,7 @@ numero = int(input("Digite um número: "))
 if numero > 10:
     print(f"Seu número é maior que 10, o seu valor digitado foi: {numero}")
 
-elif numero <10:
+elif numero < 10:
    print(f"Seu número é menor que 10, o seu valor digitado foi: {numero}")
 
 else:
