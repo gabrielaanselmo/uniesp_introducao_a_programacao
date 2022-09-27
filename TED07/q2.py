@@ -3,7 +3,7 @@
 ano_atual = int(input("Digite o ano atual: "))
 idade = int(input("Entre com seu ano de nascimento: "))
 
-if idade < 2006:
+if idade < 2007:
     print("Este ano você poderá votar.: ")
-elif idade >= 2006:
+elif idade >= 2007:
     print("Este ano você não poderá votar: ")
