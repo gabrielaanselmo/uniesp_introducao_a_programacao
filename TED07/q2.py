@@ -5,5 +5,5 @@ idade = int(input("Entre com seu ano de nascimento: "))
 
 if idade < 2006:
     print("Este ano você poderá votar.: ")
-else idade >= 2006:
+elif idade >= 2006:
     print("Este ano você não poderá votar: ")
