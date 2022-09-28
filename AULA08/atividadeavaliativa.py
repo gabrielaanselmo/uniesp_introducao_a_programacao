@@ -3,7 +3,7 @@
 '''[FORBELLONE, 2022] Construa um algoritmo para calcular as raízes de uma equação do 2 grau (Ax² + Bx + C), 
 sendo que os valores A, B, C são fornecidos pelo usuário. (considere que a equação possui duas raizes reais).'''
 
-#import math
+import math
 
 a = float(input("Digite o valor A: "))
 b = float(input("Digite o valor B: "))
@@ -67,17 +67,17 @@ altura = float(input("Diga a sua altura em metros:"))
 imc = (massa/(altura**2))
 
 if imc <18.5:
-    print ("Seu IMC é de", imc)
-    print ("Abaixo do peso ideal! Procure um especialista!")
+    print("Seu IMC é de", imc)
+    print("Abaixo do peso ideal! Procure um especialista!")
 elif 18.5< imc <24.99:
-    print ("Seu IMC é de", imc)
-    print ("Seu peso é ideal.")
+    print("Seu IMC é de", imc)
+    print("Seu peso é ideal.")
 elif 25< imc <30.00:
-    print ("Seu IMC é de", imc)
-    print ("Sobrepeso! Procure um especialista!")
+    print("Seu IMC é de", imc)
+    print("Sobrepeso! Procure um especialista!")
 else:
-    print ("Seu IMC é de", imc)
-    print ("Obesidade! Procure um especialista!")
+    print("Seu IMC é de", imc)
+    print("Obesidade! Procure um especialista!")
 
 # Atividade Avaliativa - Questão 5
 '''Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos
@@ -116,8 +116,7 @@ print
 # Atividade Avaliativa - Questão 6
 '''Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120 '''
 
-v1 = int(input("Entre com um número maior ou igual a zero: "))
-
-if v1<0:
-    print("Entre com um valor válido!")
-    
+valor_a = int(input("Digite um valor inicial A: "))
+for valor_a in range(1,10):
+    resultado = valor_a + valor_a ** valor_a
+    print(f"O resultado da multiplicação é de {valor_a}")
