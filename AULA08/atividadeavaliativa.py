@@ -1,3 +1,5 @@
+#Aluno(a): Maria Gabriela Ansemlmo de Souza Batista
+
 # Atividade Avaliativa - Questão 1
 
 '''[FORBELLONE, 2022] Construa um algoritmo para calcular as raízes de uma equação do 2 grau (Ax² + Bx + C), 
