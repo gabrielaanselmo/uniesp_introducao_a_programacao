@@ -116,7 +116,14 @@ print
 # Atividade Avaliativa - Questão 6
 '''Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120 '''
 
-valor_a = int(input("Digite um valor inicial A: "))
-for valor_a in range(1,10):
-    resultado = valor_a + valor_a ** valor_a
-    print(f"O resultado da multiplicação é de {valor_a}")
+def main():
+    A = int(input("Digite o valor de A: "))
+    fat = 1
+    i = 2
+    while i <= A:
+        fat = fat*i
+        i = i + 1
+
+    print("O valor de %d! é =" %A, fat)
+
+main()
