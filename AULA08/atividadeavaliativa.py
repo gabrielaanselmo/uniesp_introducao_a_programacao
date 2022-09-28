@@ -30,7 +30,23 @@ P(x1, y1) e Q(x2, y2), imprima a distância entre eles.'''
 '''Elabore um algoritmo que leia o valor de dois números inteiros e a operacão aritimética desejada; calcule, então, a resposta adequada. 
 Utilize os símbolos da tabela a seguir para ler qual operacão aritmética escolhida.
 '''
+n1 = int(input("Digite o número 1: "))
+n2 = int(input("Digite o número 2: "))
+operacao = input("Qual operação você vai utilizar (+,-,,/ ou *): ")
 
+
+if operacao == "+":
+    resultado = n1 + n2
+elif operacao == "-":
+    resultado = n1 - n2
+elif operacao == "*":
+    resultado = n1 * n2
+elif operacao == "/":
+    resultado = n1 / n2
+else:
+    print("Operação inválida!")
+    resultado = 0   
+print("Resultado: ", resultado)
 
 
 
@@ -60,23 +76,35 @@ else:
 '''Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos
 : [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo.
 '''
-n = 1
-c1 = 0
-c2 = 0
-c3 = 0
-c4 = 0
+n = int(input("Quantos números: "))
+i = 0
+a = 0
+b = 0
+c = 0
+d = 0
 
-while n > 0:
-    n = int(input("Digite um número: "))
-    if n >= 0 and n <= 25: 
-        c1 = c1 + 1
-    elif n >= 26 and n <= 50:
-        c2 = c2 + 1
-    elif n >= 51 and n <= 75:
-        c3 = c3 + 1
-    elif n >= 76 and n <= 100:
-        c4 = c4 + 1
-    print("A quantidade de números entre 0 e 25 é: ", c1 "entre votos 26-50 é: ", c2 "entre votos 51-75 é: ", c3, "e entre votos 76-100 é: " c3)
+while i < n: 
+    numero = int(input("Insira número:"))
+    i = i + 1
+    print(i)
+    if numero < 0: 
+        break
+    if numero >= 0 and numero <= 25: 
+        a = a + 1
+    if numero >= 26 and numero <= 50: 
+        b = b + 1
+    if numero >= 51 and numero <= 75: 
+        c = c + 1
+    if numero >= 76 and numero <= 100: 
+        d = d + 1
+print
+("Intervalo1: ",a)
+print
+("Intervalo2: ",b)
+print
+("Intervalo3: ",c)
+print
+("Intervalo4: ",d)
 
 # Atividade Avaliativa - Questão 6
 '''Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120 '''
