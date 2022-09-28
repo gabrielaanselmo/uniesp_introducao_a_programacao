@@ -43,7 +43,6 @@ n1 = int(input("Digite o número 1: "))
 n2 = int(input("Digite o número 2: "))
 operacao = input("Qual operação você vai utilizar (+,-,,/ ou *): ")
 
-
 if operacao == "+":
     resultado = n1 + n2
 elif operacao == "-":
@@ -63,8 +62,8 @@ print("Resultado: ", resultado)
 A fórmula é IMC = peso / (altura)². Elabore um algoritmo que leia o peso e a altura de uma adulto e mostre sua condição.
 '''
 
-massa = float (input ("Diga seu peso em quilogramas:"))
-altura = float (input("Diga a sua altura em metros:"))
+massa = float(input ("Diga seu peso em quilogramas:"))
+altura = float(input("Diga a sua altura em metros:"))
 imc = (massa/(altura**2))
 
 if imc <18.5:
@@ -84,7 +83,7 @@ else:
 '''Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos
 : [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo.
 '''
-n = int(input("Quantos números: "))
+n = int(input("Quantos números?: "))
 i = 0
 a = 0
 b = 0
@@ -92,7 +91,7 @@ c = 0
 d = 0
 
 while i < n: 
-    numero = int(input("Insira número:"))
+    numero = int(input("Insira um número: "))
     i = i + 1
     print(i)
     if numero < 0: 
@@ -116,3 +115,9 @@ print
 
 # Atividade Avaliativa - Questão 6
 '''Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120 '''
+
+v1 = int(input("Entre com um número maior ou igual a zero: "))
+
+if v1<0:
+    print("Entre com um valor válido!")
+    
