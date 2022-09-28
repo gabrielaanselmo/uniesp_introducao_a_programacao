@@ -24,7 +24,7 @@ else:
 
 # Atividade Avaliativa - Questão 2
 #[FORBELLONE, 2022] Construa um algoritmo que, tendo como dados de entrada dois pontos quaisquer do plano,
-P(x1, y1) e Q(x2, y2), imprima a distância entre eles.#
+#P(x1, y1) e Q(x2, y2), imprima a distância entre eles.#
 
 import math
 
