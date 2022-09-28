@@ -24,7 +24,16 @@ else:
 '''[FORBELLONE, 2022] Construa um algoritmo que, tendo como dados de entrada dois pontos quaisquer do plano,
 P(x1, y1) e Q(x2, y2), imprima a distância entre eles.'''
 
+import math
 
+x1 = float(input("Digite o valor de X1: "))
+y1 = float(input("Digite o valor de Y1: "))
+x2 = float(input("Digite o valor de X2: "))
+y2 = float(input("Digite o valor de Y2: "))
+
+D = math.sqrt((x1-y1)**2 + (x2 - y2)**2)
+
+print(f"A distância destes pontos {x1},{y1},{x2} e {y2} é de: {D}")
 
 # Atividade Avaliativa - Questão 3
 '''Elabore um algoritmo que leia o valor de dois números inteiros e a operacão aritimética desejada; calcule, então, a resposta adequada. 
@@ -47,7 +56,6 @@ else:
     print("Operação inválida!")
     resultado = 0   
 print("Resultado: ", resultado)
-
 
 
 # Atividade Avaliativa - Questão 4
