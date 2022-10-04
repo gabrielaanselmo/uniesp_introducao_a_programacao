@@ -1,4 +1,4 @@
-#Aluno(a): Maria Gabriela Ansemlmo de Souza Batista
+# Aluno(a): Maria Gabriela Ansemlmo de Souza Batista
 
 # Atividade Avaliativa - Questão 1
 
@@ -62,7 +62,6 @@ print("Resultado: ", resultado)
 # Atividade Avaliativa - Questão 4
 #O IMC - Índice de Massa Corporal - é um critério da Organização Mundial da Saudade para indicar a condição de peso de uma pessoa. 
 #  A fórmula é IMC = peso / (altura)². Elabore um algoritmo que leia o peso e a altura de uma adulto e mostre sua condição.
-
 
 massa = float(input ("Diga seu peso em quilogramas:"))
 altura = float(input("Diga a sua altura em metros:"))
