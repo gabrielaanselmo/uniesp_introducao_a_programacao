@@ -26,5 +26,4 @@ print(frutas)
 indice_fruta = frutas.index("Melancia")
 print(f"O índice da fruta é {indice_fruta}")
 del frutas[indice_fruta]
-print(frutas)
-
+print(frutas)   
