@@ -2,18 +2,25 @@
 # se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário
 
 # Lista
-futebol = ["flamengo", "corinthians", "chelsa", "barcelona", "botafogo", "palmeiras", "são paulo", "spt", "fluminense", "grêmio"]
-print(futebol[0])
-print(futebol[1])
-print(futebol[2])
-print(futebol[3])
-print(futebol[4])
-print(futebol[5])
-print(futebol[6])
-print(futebol[7])
-print(futebol[8])
-print(futebol[9])
+lista_futebol = []
 
-# Procurando o time de futebolk (time de futebol)
-print(f"juliana gosta de {frutas[3]}")
+while True:
+    op = int(input("1 - Adicionar time de futebol\n \
+                2 - Ler lista dos times \n \
+                3 - Sair \n \
+                Digite a opção: \n \
+                "))
+    
+    if op == 1:
+        # Adicionar objetos a lista
+        time = (input("Adicione um time de futebol: "))
+        lista_futebol.append(time)
+
+    elif op == 2:
+        # Lendo lista dos times
+        for lista in lista_futebol:
+            print(lista)
+            
+    elif op == 3:
+        break
 
