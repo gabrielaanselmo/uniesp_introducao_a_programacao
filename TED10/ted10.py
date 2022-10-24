@@ -2,6 +2,27 @@
 # Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de clube e depois escrever a mensagem ACHEI, 
 # se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário
 
+# Primeiro jeito de se fazer
+times = []
+times.append(input("Digite o primeiro clube: "))
+times.append(input("Digite o segundo clube: "))
+times.append(input("Digite o terceiro clube: "))
+times.append(input("Digite o quarto clube: "))
+times.append(input("Digite o quinto clube: "))
+times.append(input("Digite o sexto clube: "))
+times.append(input("Digite o sétimo clube: "))
+times.append(input("Digite o oitavo clube: "))
+times.append(input("Digite o nono clube: "))
+times.append(input("Digite o décimo clube: "))
+
+buscar = str(input("Digite o clube que deseja buscar na lista: "))
+
+if buscar in times:
+    print(f"ACHEI! {buscar} está na lista!")
+else:
+    print(f"NÃO ACHEI! {buscar} não está na lista")
+
+# Segundo jeito de se fazer
 times = []
 
 while True:
