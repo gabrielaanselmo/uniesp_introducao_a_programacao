@@ -42,10 +42,10 @@ while True:
             part2 = input("Qual time?:")
             indice = times.index(part2)
             print("Achei!")
-    else:
-        print("Não achei")
-        if selecao == "N":
-            break
+        else:
+            print("Não achei")
+            if selecao == "N":
+                break
 
 # Questão 02 - # Faça um algoritmo para ler um vetor de 30 números. Após isto, ler mais um número qualquer, 
 # calcular e escrever quantas vezes esse número aparece no vetor.
