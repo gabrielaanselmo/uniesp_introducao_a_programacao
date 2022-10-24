@@ -1,9 +1,11 @@
-# Questão 01 -
+# Questão 01 - # Escreva um algoritmo que permita a leitura dos nomes de 10 clubes de futebol e armazene os nomes lidos em um vetor (lista). 
+# Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de clube e depois escrever a mensagem ACHEI, 
+# se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário
 
 times = []
 
 while True:
-    clubes = input("Digite até 10 nomes de clubes de futebol: ")
+    clubes = input("Digite o nome de um Clube de futebol: ")
 
     if len(clubes) > 0:
         times.append(clubes)
@@ -14,11 +16,31 @@ while True:
         break
 
     for clubes in times:
-        selecao = input("Quer que eu ache algum time? [SIM/NÃO]: ")
-        if selecao == "SIM":
-            part2 = input("Qual time você quer achar?:")
+        selecao = input("Quer que eu ache algum time?[S/N]: ")
+        if selecao == "S":
+            part2 = input("Qual time?:")
             indice = times.index(part2)
             print("Achei!")
-        elif selecao == "NÃO":
+    else:
+        print("Não achei")
+        if selecao == "N":
             break
 
+# Questão 02 - # Faça um algoritmo para ler um vetor de 30 números. Após isto, ler mais um número qualquer, 
+# calcular e escrever quantas vezes esse número aparece no vetor.
+
+from random import randint
+
+v1 = []
+
+for n in range(30):
+    v1.append(randint(0, 31))
+
+print(v1)
+
+b1 = int(input("Digite o número que deseja buscar na lista: "))
+
+if b1 in v1:
+    print(f"O número {b1} aparece {v1.count(b1)} vezes na lista")
+else:
+    print(f"O número {b1} não está na lista.")
